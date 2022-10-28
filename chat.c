@@ -1,5 +1,6 @@
 /*******************************************
 * Group Name  : Shannon
+
 * Member1 Name: Shannon
 * Member1 SIS ID: 832015157
 * Member1 Login ID: shan1020
@@ -8,7 +9,6 @@
 * Member2 SIS ID: 831066972
 * Member2 Login ID: reecedw
 ********************************************/
-
 #define _GNU_SOURCE
 
 #include <stdlib.h>
@@ -185,7 +185,7 @@ int main(int argc, char* argv[]){
 			if (rec == 0) {
 				break;
 			}
-			printf("Friend: %s\n", incoming_message);
+			printf("Friend: %s", incoming_message);
 			printf("You: ");
 			fgets(outgoing_message, 200, stdin);
 			while (strlen(outgoing_message) > 141) {
@@ -236,7 +236,7 @@ int main(int argc, char* argv[]){
 				break;
 			}
 			
-			printf("Friend: %s\n", incoming_message);
+			printf("Friend: %s", incoming_message);
 		}
 
 		close(client_socket);
